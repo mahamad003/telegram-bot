@@ -4,7 +4,7 @@ const app = express();
 app.use(express.json());
 
 const TELEGRAM_TOKEN = '7672420309:AAFOdybZROzwD-C9y1_jNpqU20U7Du4bGuU'; // توکن ربات رو اینجا بذارید
-const N8N_WEBHOOK_URL = 'https://n8n-latest-29br.onrender.com/workflow/new?projectId=iAhvjxEmWaTkDdYY'; // بعداً این رو پر می‌کنید
+const N8N_WEBHOOK_URL = 'https://telegram-bot-1-mm3w.onrender.com'; // بعداً این رو پر می‌کنید
 
 app.post(`/bot${TELEGRAM_TOKEN}`, async (req, res) => {
   const message = req.body.message;
